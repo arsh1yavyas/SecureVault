@@ -6,17 +6,48 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		A1C8CD932E747BDC00299DEC /* SecureVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		A1119DB92E78543E0072EDEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1119DB82E78543E0072EDEC /* ContentView.swift */; };
+		A1119DBD2E7854B80072EDEC /* SecureVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1119DBC2E7854B80072EDEC /* SecureVaultApp.swift */; };
+		A1C8CDD02E7621AB00299DEC /* PasswordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C8CDCF2E7621AB00299DEC /* PasswordEntry.swift */; };
+		A1C8CDD22E7623D500299DEC /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C8CDD12E7623D500299DEC /* KeychainManager.swift */; };
+		A1C8CDD42E7627FE00299DEC /* AddPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C8CDD32E7627FE00299DEC /* AddPasswordView.swift */; };
+		A1C8CDD92E762E4700299DEC /* PasswordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C8CDD82E762E4700299DEC /* PasswordListView.swift */; };
+		A1C8CDDB2E76320600299DEC /* PasswordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C8CDDA2E76320600299DEC /* PasswordDetailView.swift */; };
+		A1C8CDDD2E771E8300299DEC /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C8CDDC2E771E8300299DEC /* PasswordGenerator.swift */; };
+		A1C8CDDF2E7720A700299DEC /* PasswordGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C8CDDE2E7720A700299DEC /* PasswordGeneratorView.swift */; };
+		A1C8CDE22E77240200299DEC /* AutoLockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C8CDE12E77240200299DEC /* AutoLockManager.swift */; };
+		A1C8CDE42E77251A00299DEC /* LockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C8CDE32E77251A00299DEC /* LockScreenView.swift */; };
+		A1C8CDE62E77288400299DEC /* PrivacyOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C8CDE52E77288400299DEC /* PrivacyOverlayView.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		A1C8CD952E747BDC00299DEC /* SecureVault */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SecureVault;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		A1119DB82E78543E0072EDEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = SecureVault/ContentView.swift; sourceTree = "<group>"; };
+		A1119DBA2E7854800072EDEC /* LockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LockScreenView.swift; path = SecureVault/LockScreenView.swift; sourceTree = "<group>"; };
+		A1119DBB2E78549E0072EDEC /* PasswordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PasswordListView.swift; path = SecureVault/PasswordListView.swift; sourceTree = "<group>"; };
+		A1119DBC2E7854B80072EDEC /* SecureVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecureVaultApp.swift; path = SecureVault/SecureVaultApp.swift; sourceTree = "<group>"; };
+		A1C8CD932E747BDC00299DEC /* SecureVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C8CDC22E76214D00299DEC /* AppRouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterView.swift; sourceTree = "<group>"; };
+		A1C8CDC32E76214D00299DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1C8CDC42E76214D00299DEC /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		A1C8CDC52E76214D00299DEC /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		A1C8CDC62E76214D00299DEC /* BiometricAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthManager.swift; sourceTree = "<group>"; };
+		A1C8CDC72E76214D00299DEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1C8CDC82E76214D00299DEC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A1C8CDC92E76214D00299DEC /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
+		A1C8CDCA2E76214D00299DEC /* MasterPasswordSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterPasswordSetupView.swift; sourceTree = "<group>"; };
+		A1C8CDCB2E76214D00299DEC /* SecureVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureVaultApp.swift; sourceTree = "<group>"; };
+		A1C8CDCF2E7621AB00299DEC /* PasswordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordEntry.swift; sourceTree = "<group>"; };
+		A1C8CDD12E7623D500299DEC /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		A1C8CDD32E7627FE00299DEC /* AddPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordView.swift; sourceTree = "<group>"; };
+		A1C8CDD82E762E4700299DEC /* PasswordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordListView.swift; sourceTree = "<group>"; };
+		A1C8CDDA2E76320600299DEC /* PasswordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDetailView.swift; sourceTree = "<group>"; };
+		A1C8CDDC2E771E8300299DEC /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
+		A1C8CDDE2E7720A700299DEC /* PasswordGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorView.swift; sourceTree = "<group>"; };
+		A1C8CDE12E77240200299DEC /* AutoLockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLockManager.swift; sourceTree = "<group>"; };
+		A1C8CDE32E77251A00299DEC /* LockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenView.swift; sourceTree = "<group>"; };
+		A1C8CDE52E77288400299DEC /* PrivacyOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyOverlayView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A1C8CD902E747BDC00299DEC /* Frameworks */ = {
@@ -32,7 +63,11 @@
 		A1C8CD8A2E747BDC00299DEC = {
 			isa = PBXGroup;
 			children = (
-				A1C8CD952E747BDC00299DEC /* SecureVault */,
+				A1119DBC2E7854B80072EDEC /* SecureVaultApp.swift */,
+				A1119DBB2E78549E0072EDEC /* PasswordListView.swift */,
+				A1119DBA2E7854800072EDEC /* LockScreenView.swift */,
+				A1119DB82E78543E0072EDEC /* ContentView.swift */,
+				A1C8CDCC2E76214D00299DEC /* SecureVault */,
 				A1C8CD942E747BDC00299DEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +78,41 @@
 				A1C8CD932E747BDC00299DEC /* SecureVault.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A1C8CDCC2E76214D00299DEC /* SecureVault */ = {
+			isa = PBXGroup;
+			children = (
+				A1C8CDCE2E76217200299DEC /* Models */,
+				A1C8CDC22E76214D00299DEC /* AppRouterView.swift */,
+				A1C8CDC32E76214D00299DEC /* Assets.xcassets */,
+				A1C8CDC42E76214D00299DEC /* AuthenticationManager.swift */,
+				A1C8CDC52E76214D00299DEC /* AuthenticationView.swift */,
+				A1C8CDC62E76214D00299DEC /* BiometricAuthManager.swift */,
+				A1C8CDD12E7623D500299DEC /* KeychainManager.swift */,
+				A1C8CDD82E762E4700299DEC /* PasswordListView.swift */,
+				A1C8CDDC2E771E8300299DEC /* PasswordGenerator.swift */,
+				A1C8CDE32E77251A00299DEC /* LockScreenView.swift */,
+				A1C8CDDE2E7720A700299DEC /* PasswordGeneratorView.swift */,
+				A1C8CDE12E77240200299DEC /* AutoLockManager.swift */,
+				A1C8CDD32E7627FE00299DEC /* AddPasswordView.swift */,
+				A1C8CDC72E76214D00299DEC /* ContentView.swift */,
+				A1C8CDE52E77288400299DEC /* PrivacyOverlayView.swift */,
+				A1C8CDDA2E76320600299DEC /* PasswordDetailView.swift */,
+				A1C8CDC82E76214D00299DEC /* LoginView.swift */,
+				A1C8CDC92E76214D00299DEC /* MainAppView.swift */,
+				A1C8CDCA2E76214D00299DEC /* MasterPasswordSetupView.swift */,
+				A1C8CDCB2E76214D00299DEC /* SecureVaultApp.swift */,
+			);
+			path = SecureVault;
+			sourceTree = "<group>";
+		};
+		A1C8CDCE2E76217200299DEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1C8CDCF2E7621AB00299DEC /* PasswordEntry.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +129,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				A1C8CD952E747BDC00299DEC /* SecureVault */,
 			);
 			name = SecureVault;
 			packageProductDependencies = (
@@ -82,6 +149,7 @@
 				TargetAttributes = {
 					A1C8CD922E747BDC00299DEC = {
 						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
 					};
 				};
 			};
@@ -119,6 +187,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1119DBD2E7854B80072EDEC /* SecureVaultApp.swift in Sources */,
+				A1C8CDD92E762E4700299DEC /* PasswordListView.swift in Sources */,
+				A1C8CDE42E77251A00299DEC /* LockScreenView.swift in Sources */,
+				A1119DB92E78543E0072EDEC /* ContentView.swift in Sources */,
+				A1C8CDDB2E76320600299DEC /* PasswordDetailView.swift in Sources */,
+				A1C8CDD02E7621AB00299DEC /* PasswordEntry.swift in Sources */,
+				A1C8CDDD2E771E8300299DEC /* PasswordGenerator.swift in Sources */,
+				A1C8CDD22E7623D500299DEC /* KeychainManager.swift in Sources */,
+				A1C8CDE62E77288400299DEC /* PrivacyOverlayView.swift in Sources */,
+				A1C8CDE22E77240200299DEC /* AutoLockManager.swift in Sources */,
+				A1C8CDD42E7627FE00299DEC /* AddPasswordView.swift in Sources */,
+				A1C8CDDF2E7720A700299DEC /* PasswordGeneratorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,11 +331,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = LWJ4S3776K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SecureVault;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -265,12 +348,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arshiya.SecureVault;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -279,11 +367,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LWJ4S3776K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SecureVault;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,12 +383,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arshiya.SecureVault;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
