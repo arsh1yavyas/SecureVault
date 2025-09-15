@@ -70,17 +70,6 @@ class KeychainManager {
         return status == errSecSuccess
     }
     
-    // MARK: Password Entry Management
-    // CRUD - Create, Read, Update, Delete
-    
-//    struct PasswordEntry : Codable {
-//        let id: String
-//        let title: String
-//        let username: String
-//        let password: String
-//        let dateCreated: Date
-//    }
-    
     func savePasswordEntry(websiteName: String, username: String, password: String) -> Bool {
         let entry = PasswordEntry(
             websiteName: websiteName,

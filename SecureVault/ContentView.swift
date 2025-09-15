@@ -39,14 +39,17 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             NavigationView {
-                PasswordListView()
+                if !KeychainManager.shared.masterPasswordExists() {
+                    MasterPasswordSetupView(isSetupComplete: $isSetupComplete)
+                }
+                else if autoLockManager.isLocked {
+                    LockScreenView(autoLockManager: autoLockManager)
+                }
+                else {
+                    PasswordListView()
+                }
             }
             .navigationViewStyle(StackNavigationViewStyle())
-            
-            if autoLockManager.isLocked {
-                LockScreenView(autoLockManager: autoLockManager)
-                    .transition(.opacity)
-            }
             
             if showPrivacyOverlay {
                 PrivacyOverlayView()
@@ -125,23 +128,6 @@ struct UnlockView: View {
         .padding()
     }
 }
-
-//// MARK: Main Password Manager View
-//
-//struct MainPasswordView: View {
-//    @Binding var passwords: [PasswordEntry]
-//    @Binding var searchText: String
-//    
-//    private var filteredPasswords: [PasswordEntry] {
-//        if searchText.isEmpty {
-//            return passwords
-//        } else {
-//            return passwords.filter { password in password.websiteName.localizedCaseInsensitiveContains(searchText) || password.username.localizedCaseInsensitiveContains(searchText)
-//            }
-//        }
-//    }
-//    
-//}
 
 // MARK: Preview
 struct ContentView_Previews: PreviewProvider {

@@ -13,7 +13,6 @@ struct MasterPasswordSetupView: View {
     @State private var showError = false
     @State private var errorMessage = ""
     @Binding var isSetupComplete: Bool
-    @ObservedObject var authManager: AuthenticationManager
     
     // MARK: Computed Properties
     
@@ -36,11 +35,21 @@ struct MasterPasswordSetupView: View {
             errorMessage = "Please check your password requirements"
             return
         }
-    
-        authManager.createMasterPassword(masterPassword)
-        masterPassword = ""
-        confirmPassword = ""
-        isSetupComplete = true
+        
+        let success = KeychainManager.shared.saveMasterPassword(masterPassword)
+        if success {
+            print("Master password saved successfully")
+            masterPassword = ""
+            confirmPassword = ""
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                isSetupComplete = true
+            }
+        }
+        else {
+            showError = true
+            errorMessage = "Failed to save master password. Please try again."
+        }
     }
     
     var body: some View {
@@ -107,9 +116,12 @@ struct MasterPasswordSetupView: View {
             }
             .disabled(!canCreatePassword)
             .controlSize(.large)
-            .buttonStyle(.borderedProminent)
-            .padding(.top, 20)
+            .foregroundColor(.white)
+            .frame(maxWidth: .infinity)
+            .padding()
             .background(canCreatePassword ? Color.blue : Color.gray)
+            .cornerRadius(10)
+            .padding(.top, 20)
             
             Spacer()
             

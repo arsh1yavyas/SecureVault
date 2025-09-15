@@ -84,13 +84,6 @@ struct LockScreenView: View {
                 }
                 .disabled(enteredPassword.isEmpty)
                 .padding(.top, 10)
-                
-                Button("Set Test Password") {
-                    let success = KeychainManager.shared.saveMasterPassword("testPass123")
-                    print("Master password saved: \(success)")
-                }
-                .foregroundColor(.yellow)
-                .padding(.top, 10)
             }
             .padding()
         }
